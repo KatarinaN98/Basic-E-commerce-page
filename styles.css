@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d4baba;
+}
+
+/* Header styles */
+header {
+    background-color: #fce9e9;;
+    color: rgb(119, 83, 83);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Navigation links styles */
+nav ul li a {
+    color: rgb(111, 62, 62);
+    text-decoration: none;
+    font-size: 16px;  /* Match font size of product description */
+    font-family: 'Arial', sans-serif;  /* Match font family of product description */
+    font-weight: bold;  /* Make text bold */
+    
+    /* Box styles */
+    border: 2px solid rgb(152, 95, 95);  /* Border color matches text color */
+    padding: 10px 15px;  /* Space inside the box */
+    border-radius: 15px;  /* Slightly rounded corners */
+    display: inline-block;  /* Ensures consistent spacing */
+    transition: background-color 0.3s ease, color 0.3s ease;  /* Smooth transition for hover effects */
+}
+
+nav ul li a:hover {
+    background-color: rgb(124, 40, 40);  /* Background color on hover */
+    color: white;  /* Text color on hover */
+}
+
+/* Logo and title styling */
+.logo {
+    text-align: left;
+}
+
+.logo img {
+    width: 300px; /* Reduced width for the logo image */
+    height: 170px; /* Reduced height for the logo image */
+    object-fit: cover;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* About Section Styles */
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fce9e9;
+}
+
+.about-content {
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #6a4343;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #6e4a4a;
+}
+
+.about-image img {
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Main Product Section */
+    /* Main Section Styles with Background Image */
+main {
+    background-image: url('image/\ Background.webp'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 50px 20px;
+    color: #ffffff; /* Optional: Adjust text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #744949;
+    color: #6a4343;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #bd9393;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(213, 192, 192, 0.1);
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px;
+}
+
+.product-image img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-details {
+    flex: 1;
+    margin-left: 40px;
+}
+
+.product-details h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.product-details .price {
+    font-size: 28px;
+    color: #e91e63;
+    margin-bottom: 20px;
+}
+
+.product-details .description {
+    font-size: 16px; /* Font size of product description */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.add-to-cart-btn {
+    padding: 15px 30px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #70344a;
+}
+
+/* Footer Section */
+footer {
+    background-color: #8d6464;
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Container for Footer */
+.footer-container {
+    display: flex;  /* Use flexbox for alignment */
+    justify-content: space-between;  /* Space between elements */
+    align-items: center;  /* Center items vertically */
+    max-width: 1200px;  /* Max width for the footer */
+    margin: 0 auto;  /* Center the footer on the page */
+    flex-wrap: wrap;  /* Allow items to wrap on smaller screens */
+}
+
+/* Left-aligned copyright text */
+footer .copyright {
+    margin: 0;
+}
+
+/* Right-aligned footer links */
+footer .footer-links {
+    margin: 0;
+}
+
+footer .footer-links a {
+    color: rgb(191, 176, 176); /* Same color as the social media links */
+    margin: 0 10px; /* Space between each link */
+    text-decoration: none;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Social Media Links Styling */
+footer .social-links {
+    margin: 0;
+}
+
+footer .social-links a {
+    color: rgb(191, 176, 176);
+    margin: 0 10px; /* Space between each link */
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items on small screens */
+    }
+
+    .footer-links,
+    .social-links {
+        margin-top: 10px; /* Space above footer links on small screens */
+    }
+}
+
