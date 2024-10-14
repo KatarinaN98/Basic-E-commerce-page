@@ -148,7 +148,7 @@ main {
 
 .product-details .price {
     font-size: 28px;
-    color: #e91e63;
+    color: #dea9ba;
     margin-bottom: 20px;
 }
 
@@ -160,7 +160,7 @@ main {
 
 .add-to-cart-btn {
     padding: 15px 30px;
-    background-color: #e91e63;
+    background-color: #dea9ba;
     color: white;
     border: none;
     border-radius: 5px;
